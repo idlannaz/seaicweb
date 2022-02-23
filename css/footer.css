@@ -1,0 +1,87 @@
+/* 
+  This is the footer for the website. all of the styling is in this file. for footer only.
+*/
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #4DD0E1;
+}
+
+.fa.remove {
+  padding: 10px;
+  font-size: 20px;
+  /* width: 40px;
+    height: min-content; */
+  text-align: center;
+  color: red;
+  text-decoration: none;
+  margin: 10px 2px;
+  /* border-radius: 50%; */
+}
+
+th.title {
+  text-align: right;
+}
+
+th.title.left {
+  text-align: left;
+  width: 100%;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: min-content;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ff4081;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-user {
+  background: #45bbff;
+  color: white;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.twit {
+  color: white;
+  font-family: 'Amatic SC';
+  font-size: 24px;
+  font-weight: bold;
+}

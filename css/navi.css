@@ -1,0 +1,49 @@
+/* 
+  navigation bar styling file
+*/
+.navbar {
+  margin-bottom: 0;
+  background-color: black;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: bolder;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+
+
+.navbar-nav li a:hover,
+
+.navbar-nav li.active a {
+  color: #4DD0E1 !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

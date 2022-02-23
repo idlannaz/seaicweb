@@ -1,0 +1,21 @@
+*****************************************************************************************************************************************
+Guide to locating the file 
+
+.php files
+•	All .php files are the pages that available in the website
+
+.inc.php
+•	Is the component that need to be imported to .php files
+•	Coding structure is here
+
+
+
+To alter the coding:
+•	Locate which page that need to alter (e.g. text description in homepage under about us) 
+•	See the homepage.php and because of the text is under about us so the section is under about.
+•	Go to components folder, under the home folder locate the about.inc.php 
+•	Alter the coding.
+
+
+CSS is for styling each pages for the website have their own styling file
+********************************************************************************************************************************************

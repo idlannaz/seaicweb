@@ -1,0 +1,486 @@
+/* 
+  This styling file is for homepage(Landing page). 
+*/
+
+/* base style */
+body {
+  line-height: 1.8;
+  color: #818181;
+  font-family:'Lato';
+}
+
+/* title in services */
+h1{
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* use in title for each section in home page*/
+h2 {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+  /* font-family: 'Lato'; */
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+  /* font-family: 'Amatic SC'; */
+}
+
+/* use as mini description under the main title for each title */
+h4 {
+  font-size: 24px;
+  line-height: 1.375em;
+  color: black;
+  font-weight: lighter;
+  /* font-family: 'Amatic SC'; */
+  /* text-decoration: underline; */
+  /* text-align: justify;
+  text-justify: inter-word; */
+  margin-bottom: 30px;
+}
+
+/* style for contact section */
+p.contct{
+  font-size: 23px;
+  /* font-family: 'Amatic SC'; */
+  /* font-weight: bold; */
+}
+ 
+/* style for about section description */
+p.txt{
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(105, 97, 97);
+  font-family: 'Inter';
+  text-indent: 30px;
+  font-size: 22px;
+}
+
+.multicolortext {
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.jumbotron {
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+  .banner {
+    margin-top: 10%;
+  }
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: outset 10px #fff;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: fit-content;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.container-fluid.contain {
+  margin-top: 10px;
+}
+
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo-small {
+  color: #4DD0E1;
+  font-size: 50px;
+}
+
+
+.avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.avatar.login {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding-left: 100px;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+
+.panel {
+  border: 1px #4DD0E1;
+  border-radius: 25px !important;
+  transition: 0.4s ease;
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+  font-family: 'Morga';
+  font-size: large;
+}
+
+.panel:hover {
+  transform: translateY(-20px);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #4DD0E1;
+  background-color: #fff !important;
+  color: #4DD0E1;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #4DD0E1 !important;
+  padding: 25px;
+  border-bottom: 1px transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-radius: 25px;
+}
+
+.panel-footer {
+  background-color: white !important;
+  border-radius: 25px;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #4DD0E1;
+  color: #fff;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.col-sm-3 {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-3 {
+    margin-top: 50px;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  button.btn {
+    background-color: #2c22bb;
+    color: white;
+    /* padding: 14px 20px;
+    margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    /* width: 10%; */
+  }
+}
+
+/* login page ********************************************************************************************************************/
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 15%;
+}
+
+.img {
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+
+}
+
+.login-page {
+  padding: 50px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4DD0E1;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button.btn {
+  background-color: #bb227b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button.btn.log {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container1 {
+  padding: 16px;
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/******************************************* The Modal (background) **********************************************************************/
+.modal1 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 20%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+
+/* ************************************************************************************************************************** */
+
+

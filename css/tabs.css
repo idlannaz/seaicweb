@@ -1,0 +1,397 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+body.team {
+	margin: 0;
+}
+
+
+/* background for about us */
+.build {
+	font-family: Arial;
+	padding: 20px;
+	background-color: white;
+	/* background-image: url(https://raw.githubusercontent.com/idlannaz/img/main/SEAIC_LogoBlur.png); */
+	/* background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-attachment: fixed; */
+}
+
+
+*,
+:after,
+:before {
+	box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: table
+}
+
+.clearfix:after {
+	clear: both;
+	display: block
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+.members-wrap {
+	width: 100%;
+	margin: auto;
+	max-width: 525px;
+	min-height: 800x;
+	position: relative;
+	float: unset;
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.members-html {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	padding: 20px;
+	background: rgba(40, 57, 101, .9);
+	padding-bottom: 50px;
+}
+
+
+.members-html .main-htm,
+.members-html .other-htm {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all .50s linear;
+}
+
+.members-html .main,
+.members-html .other,
+.members-form .group .check {
+	display: none;
+}
+
+.members-html .tab,
+.members-form .group .label,
+.members-form .group .button {
+	text-transform: uppercase;
+}
+
+.members-html .tab {
+	font-size: 22px;
+	margin-right: 15px;
+	padding-bottom: 5px;
+	margin: 0 15px 10px 0;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.members-html .main:checked+.tab,
+.members-html .other:checked+.tab {
+	color: #fff;
+	border-color: #1161ee;
+}
+
+.members-form {
+	min-height: 345px;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.members-form .group {
+	margin-bottom: 15px;
+}
+
+.members-form .group .label,
+.members-form .group .input,
+.members-form .group .button {
+	width: 100%;
+	color: black;
+	display: block;
+}
+
+.members-form .group .input,
+.members-form .group .button {
+	border: none;
+	padding: 10px 15px;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, .1);
+}
+
+.members-form .group input[data-type="password"] {
+	/* text-security:circle; */
+	-webkit-text-security: circle;
+}
+
+.members-form .group .label {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.members-form .group .button {
+	background: #1161ee;
+}
+
+.members-form .group label .icon {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	background: rgba(255, 255, 255, .1);
+}
+
+.members-form .group label .icon:before,
+.members-form .group label .icon:after {
+	content: '';
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	transition: all .2s ease-in-out 0s;
+}
+
+.members-form .group label .icon:before {
+	left: 3px;
+	width: 5px;
+	bottom: 6px;
+	transform: scale(0) rotate(0);
+}
+
+.members-form .group label .icon:after {
+	top: 6px;
+	right: 0;
+	transform: scale(0) rotate(0);
+}
+
+.members-form .group .check:checked+label {
+	color: #fff;
+}
+
+.members-form .group .check:checked+label .icon {
+	background: #1161ee;
+}
+
+.members-form .group .check:checked+label .icon:before {
+	transform: scale(1) rotate(45deg);
+}
+
+.members-form .group .check:checked+label .icon:after {
+	transform: scale(1) rotate(-45deg);
+}
+
+.members-html .main:checked+.tab+.other+.tab+.members-form .main-htm {
+	transform: rotate(0);
+}
+
+.members-html .other:checked+.tab+.members-form .other-htm {
+	transform: rotate(0);
+}
+
+.hr {
+	height: 2px;
+	margin: 60px 0 50px 0;
+	background: rgba(255, 255, 255, .2);
+}
+
+
+
+.center {
+	margin-bottom: 50px;
+
+}
+
+.form-input input {
+	display: none;
+
+}
+
+.form-input label {
+	display: block;
+
+	width: 70%;
+	height: 40px;
+	margin-left: 70px;
+	line-height: 50px;
+	text-align: center;
+	background: #1172c2;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #fff;
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	text-transform: Uppercase;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-input img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.preview {
+	width: 27%;
+	margin-left: 83px;
+}
+
+@media screen and (max-width: 400px) {
+	.form-input label {
+		display: block;
+		width: 100%;
+		height: 45px;
+		margin-left: 4px;
+		line-height: 50px;
+		text-align: center;
+		background: #1172c2;
+		/* padding-left: 10px;
+		padding-right: 10px; */
+		color: #fff;
+		font-size: 15px;
+		font-family: "Open Sans", sans-serif;
+		text-transform: Uppercase;
+		font-weight: 600;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.preview {
+		width: 30%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 546px) {
+	label.upload {
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.modal.h {
+	width: 30%;
+	background: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	transition: 1s;
+}
+
+.modal-checkbox {
+	display: none;
+}
+
+.modal-checkbox:checked~div {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal-label {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.modal-window {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s;
+}
+
+.modal-content1 {
+	max-width: 576px;
+	background: white;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.modal-close-icon {
+	cursor: pointer;
+	width: 1.5rem;
+	margin: 0 0.5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #657ced;
+}
+
+
+/* *****************************************************upload file******************************************************************** */
+
+
+input[type="file"] {
+	z-index: -1;
+	position: absolute;
+	opacity: 0;
+	font-size: 100px;
+	left: 0;
+	top: 0;
+
+}
+
+input:focus+label {
+	outline: 2px solid;
+}
+
+/* ****************************** */
+
+.upload-btn-wrapper {
+	/* margin: 10px;
+	padding: 5px; */
+	color: white;
+	overflow: hidden;
+}
+
+label.bton {
+	color: gray;
+	background-color: white;
+	padding: 3px 5px;
+	margin: 10px;
+	border-radius: 8px;
+	/* font-size: 20px; */
+	font-weight: bold;
+}
+
+.icons {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	height: min-content;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 2px;
+	border-radius: 50%;
+	color: red;
+}
+
+/* Darker background on mouse-over */
+.icons:hover {
+	background-color: RoyalBlue;
+}
